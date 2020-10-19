@@ -10,7 +10,7 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require rails-ujs
+//= require jquery
 //= require activestorage
 //= require turbolinks
 //= require_tree .
@@ -46,7 +46,3 @@ $(".js-scroll-trigger").click(function () {
     $(".navbar-collapse").collapse("hide");
 });
 
-// Activate scrollspy to add active class to navbar items on scroll
-$("body").scrollspy({
-    target: "#sideNav",
-});
