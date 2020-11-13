@@ -10,10 +10,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_10_19_105252) do
+ActiveRecord::Schema.define(version: 2020_11_13_110802) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "data_migrations", primary_key: "version", id: :string, force: :cascade do |t|
+  end
+
+  create_table "interests", force: :cascade do |t|
+    t.string "title"
+    t.text "description"
+    t.integer "profile_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "url"
+  end
 
   create_table "profiles", force: :cascade do |t|
     t.string "name"

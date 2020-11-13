@@ -9,6 +9,7 @@
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Projects</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
@@ -41,28 +42,44 @@
             </section>
             <hr class="m-0" />
             <!-- Experience-->
-            <section class="resume-section" id="experience">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Experience</h2>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Full Stack Software Engineer</h3>
-                            <div class="subheading mb-3">Stella Technologies</div>
-                            <p>Working as a full stack engineer with projects related to medical solutions involving Ruby on Rails, Angular, Java and Ionic as technological Stack.</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">April 2019 - Present</span></div>
+                                          <section class="resume-section" id="experience">
+                                              <div class="resume-section-content">
+                                                  <h2 class="mb-5">Experience</h2>
+                                                  <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                                                      <div class="flex-grow-1">
+                                                          <h3 class="mb-0">Full Stack Software Engineer</h3>
+                                                          <div class="subheading mb-3">Stella Technologies</div>
+                                                          <p>Working as a full stack engineer with projects related to medical solutions involving Ruby on Rails, Angular, Java and Ionic as technological Stack.</p>
+                                                      </div>
+                                                      <div class="flex-shrink-0"><span class="text-primary">April 2019 - Present</span></div>
+                                                  </div>
+                                                  <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                                                      <div class="flex-grow-1">
+                                                          <h3 class="mb-0">Ruby on Rails Web Developer</h3>
+                                                          <div class="subheading mb-3">Arkhitech</div>
+                                                          <p>Worked on the development of Online Grocery Store ( <a href="https://www.howmuch.pk" target="_blank"> Howmuch.pk</a>) built using Ruby on Rails Spree E-Commerce Framework.</p>
+                                                      </div>
+                                                      <div class="flex-shrink-0"><span class="text-primary">June 2017 - April 2019</span></div>
+                                                  </div>
+                                              </div>
+                                          </section>
+                                          <hr class="m-0" />
+            <!------Projects --->
+                <section class="resume-section" id="projects">
+                    <div class="resume-section-content">
+                        <h2 class="mb-5">Projects</h2>
+                            <% @interests.each do |interest| %>
+                              <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                                  <div class="flex-grow-1">
+                                      <h3 class="mb-0"></h3>
+                                      <div class="subheading mb-3"><%= interest.title %></div>
+                                      <p><%= interest.description %></p>
+                                  </div>
+                              </div>
+                            <% end %>
                     </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Ruby on Rails Web Developer</h3>
-                            <div class="subheading mb-3">Arkhitech</div>
-                            <p>Worked on the development of Online Grocery Store ( <a href="https://www.howmuch.pk" target="_blank"> Howmuch.pk</a>) built using Ruby on Rails Spree E-Commerce Framework.</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">June 2017 - April 2019</span></div>
-                    </div>
-                </div>
-            </section>
-            <hr class="m-0" />
+                </section>
+                <hr class="m-0" />
             <!-- Education-->
             <section class="resume-section" id="education">
                 <div class="resume-section-content">

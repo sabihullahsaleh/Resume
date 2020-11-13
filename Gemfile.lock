@@ -71,6 +71,8 @@ GEM
     coffee-script-source (1.12.2)
     concurrent-ruby (1.1.7)
     crass (1.0.6)
+    data_migrate (6.5.0)
+      rails (>= 5.0)
     duktape (2.3.0.0)
     erubi (1.9.0)
     execjs (2.7.0)
@@ -189,6 +191,7 @@ DEPENDENCIES
   capybara (>= 2.15)
   chromedriver-helper
   coffee-rails (~> 4.2)
+  data_migrate
   duktape
   jbuilder (~> 2.5)
   jquery-rails
